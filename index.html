@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday,  Tephy</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts for that elegant look -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@400;600&family=Arial:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+  <!-- Global Background Image -->
+  <!-- You will replace the URL below with your downloaded image -->
+  <div class="background-container">
+    <img id="bg-image" src="assets/images/night-sky.jpeg" alt="Night Sky Background" />
+  </div>
+
+  <!-- Music -->
+  <audio id="bg-music" src="assets/music/piano.mp3" loop></audio>
+
+  <!-- PAGE 1: Welcome -->
+  <section id="page1" class="page active">
+    <div class="content">
+      <h1>Hey YOU ...</h1>
+      <p>Before anything else...happy birthday&#128536;</p>
+      <button class="btn" id="begin-btn">Ready ...?</button>
+    </div>
+  </section>
+
+    <!-- PAGE 2: Our Paths Crossed -->
+  <section id="page2" class="page">
+    <div class="content">
+            
+      <h1>Our Paths Crossed</h1>
+
+        <div class="crossed-line fade-text" style="opacity: 0; transform: translateY(20px);">
+          <p>Out of every soul in this world...</p>
+          <span class="mini-star">&#11088;</span>
+        </div>
+        <div class="crossed-line fade-text" style="opacity: 0; transform: translateY(20px);">
+          <p>somehow, quietly...</p>
+          <span class="mini-star">&#11088;</span>
+        </div>
+        <div class="crossed-line fade-text" style="opacity: 0; transform: translateY(20px);">
+           <p>our paths found each other.</p>
+            <span class="mini-star">&#11088;</span>
+        </div>
+      <button class="btn" id="continue-btn-2" style="opacity: 0; transform: scale(0.8);">Continue</button>
+    </div>
+  </section>
+
+   <!-- PAGE 3: Little Stars -->
+  <section id="page3" class="page">
+    <div class="content">
+      <h1>You probably don't realize it,<br>but...</h1>
+      
+      <!-- Star Container -->
+      <div class="stars-container">
+        <!-- Star 1 -->
+        <div class="star-item" data-id="1">
+          <span class="star-icon">⭐</span> <!-- REPLACE with <img src="assets/images/star.png"> later -->
+          <div class="star-message hidden">You make the ordinary feel extraordinary.</div>
+        </div>
+        <!-- Star 2 -->
+        <div class="star-item" data-id="2">
+          <span class="star-icon">⭐</span>
+          <div class="star-message hidden">Please never stop chasing your dreams.</div>
+        </div>
+        <!-- Star 3 -->
+        <div class="star-item" data-id="3">
+          <span class="star-icon">⭐</span>
+          <div class="star-message hidden">The world is brighter because you're in it.</div>
+        </div>
+        <!-- Star 4 -->
+        <div class="star-item" data-id="4">
+          <span class="star-icon">⭐</span>
+          <div class="star-message hidden">I don't think you realize how funny you are.</div>
+        </div>
+        <!-- Star 5 -->
+        <div class="star-item" data-id="5">
+          <span class="star-icon">⭐</span>
+          <div class="star-message hidden">Some friendships simply feel like home.</div>
+        </div>
+      </div>
+
+      <p class="continue-hint hidden">(Tap anywhere to continue)</p>
+    </div>
+  </section>
+   
+<!-- PAGE 5: Happy Birthday & Gift Box (NEW) -->
+<section id="page5" class="page">
+  <div class="content">
+    <h1 class="birthday-greeting">Okay okay,<br>HAPPY BIRTHDAY already</h1>
+    
+    <p class="gift-subtext">Sorry I couldn't wrap something you can hold &#128546;</p>
+    
+    <p class="tap-hint" id="gift-tap-hint">(tap anywhere to open)</p>
+    
+    <button class="btn" id="open-gift-btn" 
+    style="opacity: 0; transform: scale(0.8);">Open it</button>
+  </div>
+</section>
+  <!-- PAGE 6: The Gifts (Cards) -->
+<section id="page6" class="page">
+  <div class="content">
+    <h1 class="cards-title">There are a few little things inside...</h1>
+    
+    <div class="cards-container">
+      <!-- Card 1: Song -->
+<div class="flip-card" data-id="1">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="card-icon">🎵</div>
+      <p>A song that reminds me of you</p>
+    </div>
+    <div class="flip-card-back song-back">
+      <p class="song-title">Have We Met Before</p>
+      <p class="song-artist">Sarah Barrios</p>
+      <div class="audio-player">
+        <audio id="song-1" controls>
+          <source src="assets/music/Sarah Barrios - Have We Met Before.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+</div>
+
+     <!-- Card 2: Photo -->
+<div class="flip-card" data-id="2">
+  <div class="flip-card-inner">
+    <div class="flip-card-front photo-front">
+      <img src="assets/images/5.jpeg" alt="Her on the runway" class="memory-img-front">
+    </div>
+    <div class="flip-card-back">
+      <p class="back-text">A star was born today.
+        And I can't wait to watch the world discover what I've known all along..</p>
+    </div>
+  </div>
+</div>
+
+      <!-- Card 3: Funny Memory -->
+  <div class="flip-card" data-id="3">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="card-icon">😊</div>
+      <p>A funny memory</p>
+    </div>
+    <div class="flip-card-back">
+      <p class="back-text">Press play, I have to tell you this.</p>
+      <div class="audio-player">
+        <audio id="memory-3" controls>
+          <source src="assets/music/funny memory.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Card 4: Wish -->
+<div class="flip-card" data-id="4">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="card-icon">🌱</div>
+      <p>A wish for your future</p>
+    </div>
+    <div class="flip-card-back">
+      <p class="back-text">May your future be full of magazine covers and zero bad lighting.</p>
+      <p class="back-subtext">Here's to many more memories. &#x1F90D;</p>
+    </div>
+  </div>
+</div>
+    
+    <button class="btn" id="continue-to-cake" style="opacity: 0; transform: scale(0.8);">Continue</button>
+    <p class="cards-hint hidden">(Tap any card to reveal)</p>
+  </div>
+</section>
+
+ <!-- PAGE 7: Make a Wish (Cake) -->
+<section id="page7" class="page">
+  <h1 class="cake-title">Make a wish...</h1>
+
+  <div class="flame-mask"></div>
+  <div class="flame-overlay" id="page7-flame">
+    <div class="flame-inner"></div>
+    <div class="flame-outer"></div>
+  </div>
+
+  <p class="tap-hint" id="candle-tap-hint">(tap the flame to blow the candle and make a wish)</p>
+
+  <div class="content">
+    <button class="btn" id="continue-to-ending" style="opacity: 0; transform: scale(0.8);">Continue</button>
+  </div>
+</section>
+  <!-- PAGE 8: The Ending (Final Letter) -->
+<section id="page8" class="page">
+  <div class="content">
+    <h1 class="final-greeting">Happy Birthday,<br>Tephy Marion</h1>
+    <div class="letter-container">
+      <div class="letter-paper">
+        <p class="letter-text">
+  Happy Birthday. &#9825;
+  <br><br>
+  If there's one thing I hope you take away from today, it's this:
+  I hope you never stop believing in yourself.
+  Keep chasing the things that make your eyes light up. Keep taking those
+  scary first steps. Keep choosing the version of yourself that feels the
+  most like you. The road might not always be easy, but I genuinely
+  believe you're capable of more than you sometimes give yourself credit for.
+  <br><br>
+  Thank you for all the laughs, the random conversations, the little
+  moments that probably meant more to me than you ever realized. They've
+  made my world a little brighter.
+  <br><br>
+  I wish I could have wrapped you a real gift this year.
+  Instead, I made this.
+  Not because it could ever compare to a present... but because I wanted to
+  give you something that couldn't be bought. Every page, every click,
+  every little detail exists because I was thinking of one person—you.
+  <br><br>
+  I hope this new year of your life is kind to you. I hope it surprises
+  you in beautiful ways. I hope it brings you closer to every dream you're
+  quietly carrying in your heart.
+  <br><br>
+  And no matter how much time passes...
+  I hope we keep making memories worth smiling about.
+  <br><br>
+  Happy Birthday.
+  You deserve every good thing that's coming your way. &#9825;
+  <br><br>
+  <span class="signature">Fuck around and find out</span>
+</p>
+    
+    <div class="heart-icon">💖</div>
+    
+    <button class="btn" id="restart-btn">Revisit the Journey</button>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
